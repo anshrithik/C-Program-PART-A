@@ -41,14 +41,12 @@ void subMatrices(int m, int n, int a[m][n], int b[m][n]){
 void readElements(int m, int n, int a[m][n], int b[m][n]){
     
     int i, j;
-    
-    /* First matrix */        
+        
     printf("\n Enter %d elements of the first matrix row-wise: \n", m*n);
     for(i=0; i<m; i++)
         for(j=0; j<n; j++)
             scanf("%d", &a[i][j]);
-   
-   /* Second matrix */
+
     printf("\n Enter %d elements of the Second matrix row-wise: \n", m*n);
      for(i=0; i<m; i++)
         for(j=0; j<n; j++)
@@ -61,7 +59,6 @@ void displayMatrices(int m, int n, int a[m][n], int b[m][n]){
             
     printf("\n Stored matrices are: \n");
     
-     /* First matrix */
     printf("First matrix is: \n");
     for(i=0; i<m; i++){
         for(j=0; j<n; j++){
@@ -69,8 +66,7 @@ void displayMatrices(int m, int n, int a[m][n], int b[m][n]){
         }
         printf("\n");
     }
-    
-    /* Second matrix */
+
     printf("Second matrix is: \n");
     for(i=0; i<m; i++){
         for(j=0; j<n; j++){
