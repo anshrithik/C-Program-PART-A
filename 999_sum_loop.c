@@ -2,24 +2,22 @@
 #include <conio.h>
 
 int main()	{
+	
 	int n,sum=0;
 	
-	printf("Enter the Number : ");
+	printf("Enter a Number : ");
 	scanf("%d",&n);
 	
-	while (n!=0 && n!=999)	
-	{	
-		sum=0;
-		printf("Enter the Number : ");
-		scanf("%d",&n);
-		if (n>0) {
-		sum=sum+n;
-		}
-		if(n==999)	{
-			printf("Sum = %d\n",sum);
-			printf("End of Program !");
-		}
+	while(n!=999)	{
+		sum = sum + n;
+	if(n<0)	{
+		sum = sum - n;
 	}
-	getch();
-	return 0;
+		printf("Enter 999 to STOP ! \n");
+		printf("Enter a Number : ");
+		scanf("%d",&n);
+	}
+	
+	printf("Sum = %d",sum);
+	
 }
